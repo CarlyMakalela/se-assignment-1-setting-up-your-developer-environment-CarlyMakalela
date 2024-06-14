@@ -23,21 +23,23 @@ This assignment aims to familiarize you with the tools and configurations necess
 
 # My Developer Environment Setup Guide
 
-## Introduction
+### Introduction
 This guide outlines the process I followed to set up my development environment on my computer. It covers the installation of essential software, configuration of tools, and preparation for coding and project work.
 
-## Step 1: Choose and Install My Operating System (OS)
+## Step 1: Choose and Install your preferred Operating System (OS)
+
+NB Choose an operating system that suits your own preferences
 
 ### Download and Install Windows 11
-1. I visited the [Windows 11 download page](https://www.microsoft.com/software-download/windows11).
-2. I clicked "Download Now" to get the installer.
-3. After the download completed, I ran the installer and followed the on-screen instructions to install Windows 11.
-4. I restarted my computer when prompted.
+1. Visite the [Windows 11 download] (https://www.microsoft.com/software-download/windows11).
+2. Click "Download Now" to get the installer.
+3. After the download completed, run the installer and follow the on-screen instructions to install Windows 11.
+4. Restart your computer when prompted.
 
 ## Step 2: Install a Text Editor or Integrated Development Environment (IDE)
 
 ### Download and Install Visual Studio Code
-1. I navigated to the [Visual Studio Code download page](https://code.visualstudio.com/Download).
+1. I navigated to the [Visual Studio Code download] (https://code.visualstudio.com/Download).
 2. I chose the appropriate version for Windows.
 3. I downloaded the installer and ran it.
 4. I followed the installation steps and launched Visual Studio Code from the Start menu.
@@ -45,71 +47,76 @@ This guide outlines the process I followed to set up my development environment 
 ## Step 3: Set Up a Version Control System
 
 ### Install Git
-1. I went to the [Git download page](https://git-scm.com/downloads).
-2. I downloaded the Windows installer.
-3. I ran the installer and used the default settings.
-4. I opened Command Prompt and typed:
-   ```bash
+1. I went to the [Git download] (https://git-scm.com/downloads).
+2. I ran the installer and used the default settings.
+3. I opened Command Prompt and typed:
+   
    git --version
-   ```
-   to verify the installation.
+   
+  In order to verify the installation.
 
-### Configure Git
+###   In order to Configure Git
 1. I opened Command Prompt and entered:
-   ```bash
+
    git config --global user.name "Your Name"
+
    git config --global user.email "your.email@example.com"
-   ```
+   
 
-### Create a GitHub Account
-1. I visited [GitHub](https://github.com) and signed up for an account.
+## Create a GitHub Account
+1. I visited [GitHub] (https://github.com) and signed up for an account.
+2. Followed the prompts until my account was successfully set up.
 
-### Initialize a Git Repository
+## Initialize a Git Repository
 1. I created a new project folder by opening Command Prompt and typing:
-   ```bash
-   mkdir my_project
+
+   ## NB Enter these steps one at a time and press  "Enter" after each command.
+   mkdir myplp_project
    cd my_project
-   ```
+   
 2. I initialized a Git repository:
-   ```bash
+   
    git init
-   ```
+   
 3. I created a README file and made my first commit:
-   ```bash
+   
    echo "# My Project" > README.md
+
    git add README.md
-   git commit -m "Initial commit"
-   ```
+
+   git commit -m "initial commit"
+
+   git remote add origin [your-repo-URL]
+
+   git push -u origin main/master
+
+4.. I added a .gitignore file:
+   - I created a file named `.gitignore` in the project folder.
+   - I added common files and directories to ignore (e.g., `__pycache__/`, `*.pyc`, `.vscode/`).
+
+
 
 ## Step 4: Install Necessary Programming Languages and Runtimes
 
 ### Install Python
-1. I went to the [Python download page](https://www.python.org/downloads/).
+1. I went to the [Python download ] (https://www.python.org/downloads/).
 2. I clicked "Download Python" to get the installer.
-3. I ran the installer, checked "Add Python to PATH", and clicked "Install Now".
-4. To verify the installation, I opened Command Prompt and typed:
-   ```bash
-   python --version
-   ```
+3. I ran the installer, ensured that check the "Add Python to PATH" instruction, and clicked "Install Now".
 
 ## Step 5: Install Package Managers
 
 ### Verify pip Installation
 1. I checked if pip was installed by opening Command Prompt and typing:
-   ```bash
    pip --version
-   ```
+2. Alternatively:
+python -m pip --version
 
 ## Step 6: Configure a Database (MySQL)
 
 ### Download and Install MySQL
-1. I visited the [MySQL download page](https://dev.mysql.com/downloads/windows/installer/5.7.html).
+1. I visited the [MySQL download] (https://dev.mysql.com/downloads/windows/installer/5.7.html).
 2. I downloaded the appropriate installer for Windows.
 3. I ran the installer and followed the default settings.
-4. To verify the installation, I opened Command Prompt and typed:
-
-   mysql --version
-   
 
 ## Step 7: (Optional) Set Up Development Environments and Virtualization
 
@@ -117,13 +124,11 @@ Depending on what you need as an individual, you can install Docker. I chose  to
 
 ### Install Docker (Optional)
 
-1. Go to the [Docker download page](https://www.docker.com/products/docker-desktop).
+1. Go to the [Docker download] (https://www.docker.com/products/docker-desktop).
 2. Click on the "Download for Windows" option.
 3. Run the installer and follow the instructions/prompts.
 4. Click on finish or done option.
-5. To verify the installation, open the Command Prompt, then open it ( choose the 'Run as administrator' option) and type:
-   
-   docker --version
+
    
 
 ## Step 8: Explore Extensions and Plugins
@@ -139,34 +144,8 @@ Depending on what you need as an individual, you can install Docker. I chose  to
    - Pylance: Enhances Python editing features like type checking and autocomplete.
    - Path Intellisense: Autocompletes filenames in the project.
 
-## A GitHub Repository Containing a Sample Project
-
-### Create and Push a Sample Project to GitHub
-1. I created a repository on GitHub:
-   - I logged into my GitHub account.
-   - I clicked on the "New" button to create a new repository.
-   - I named the repository "my_project" and left it as public.
-   - I clicked "Create repository".
-
-2. I linked my local repository to GitHub:
-   - In the GitHub page, I copied the repository URL.
-   - In , I navigated to my project folder:
-     ```bash
-     cd my_project
-     ```
-   - I added the remote repository:
-     ```bash
-     git remote add origin [your-repo-URL]
-     ```
-   - I pushed my initial commit:
-     ```bash
-     git push -u origin master
-     ```
-
-3. I added a .gitignore file:
-   - I created a file named `.gitignore` in the project folder.
-   - I added common files and directories to ignore (e.g., `__pycache__/`, `*.pyc`, `.vscode/`).
-
+ 
+   
 ## Reflection on my Challenges
 
 ### My Experience
@@ -175,6 +154,6 @@ Setting up my development environment came with some challenges. The most notabl
 
 Visual studio Code was a breeze to use, it is straight forward and you can also download any extentension easily without a hassle. It is indeed User friendly, even for the beginners. Navigation is a bliss.
 
-My other challenge was navigating Dart Flutter. I found that the solution is to  reboot your machine. Once I rebooted my machine, I was able to work on it properly without receiving error messages even for the extentions I had already installed. I also used AI to help with some of the issues I had faced.  
+My other challenge was navigating Flutter. I found that the solution is to  reboot your machine. Once I rebooted my machine, I was able to work on it properly without receiving error messages even for the extentions I had already installed. I also used AI to help with some of the issues I had faced.  
 
 Following these steps, I was able to set up a fully functional development environment, ready for coding and project work. If I encounter any specific issues or need further assistance, I know I can seek help and continue learning.
