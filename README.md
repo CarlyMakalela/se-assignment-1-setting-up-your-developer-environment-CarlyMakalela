@@ -127,7 +127,7 @@ Depending on what you need as an individual, you can install Docker. I chose  to
 1. Go to the [Docker download] (https://www.docker.com/products/docker-desktop).
 2. Click on the "Download for Windows" option.
 3. Run the installer and follow the instructions/prompts.
-4. Click on finish or done option.
+4. Click on finish or the done option.
 
    
 

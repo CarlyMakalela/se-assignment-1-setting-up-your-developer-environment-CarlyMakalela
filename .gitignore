@@ -1,0 +1,6 @@
+logs/
+virtualenv
+build/
+dist/
+tmp/
+*.class
